@@ -57,3 +57,10 @@ actualBtnRight.addEventListener('click', () => {
 function HtmlCssProjectLeft(obj){
     obj.style.left = "" + (-390 * i) + "px";
 }
+
+
+var orderbarBlocksType = document.querySelectorAll('.orderbar-block-type');
+
+orderbarBlocksType.forEach(orderbarBlockType => {
+    orderbarBlockType.setAttribute('size', orderbarBlockType.getAttribute('placeholder').length);
+});
