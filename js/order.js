@@ -9,32 +9,36 @@ var i = 3;
 var actualFirstClone = actualBlocks[0].cloneNode(true);
 var actualSecondClone = actualBlocks[1].cloneNode(true);
 var actualThirdClone = actualBlocks[2].cloneNode(true);
+var actualFourthClone = actualBlocks[3].cloneNode(true);
 var actualLastFirstClone = actualBlocks[actualBlocks.length - 1].cloneNode(true);
 var actualLastSecondClone = actualBlocks[actualBlocks.length - 2].cloneNode(true);
 var actualLastThirdClone = actualBlocks[actualBlocks.length - 3].cloneNode(true);
+var actualLastFourthClone = actualBlocks[actualBlocks.length - 4].cloneNode(true);
 
-actualThirdClone.id = "actual-third-clone";
-actualLastThirdClone.id = "actual-last-third-clone";
+actualFourthClone.id = "actual-fourth-clone";
+actualLastFourthClone.id = "actual-last-fourth-clone";
 
 actualFull.append(actualFirstClone);
 actualFull.append(actualSecondClone);
 actualFull.append(actualThirdClone);
+actualFull.append(actualFourthClone);
 actualFull.prepend(actualLastFirstClone);
 actualFull.prepend(actualLastSecondClone);
 actualFull.prepend(actualLastThirdClone);
+actualFull.prepend(actualLastFourthClone);
 
 var actualBlocks = document.querySelectorAll('.actual-slider-main-block');
 
 actualFull.addEventListener('transitionend', () => {
     var actualBlocks = document.querySelectorAll('.actual-slider-main-block');
-    if (actualBlocks[i + 2].id === "actual-third-clone") {
+    if (actualBlocks[i + 3].id === "actual-fourth-clone") {
         actualFull.style.transition = "none";
-        i = 3;
+        i = 4;
         HtmlCssProjectLeft(actualFull);
     }
-    if (actualBlocks[i].id === "actual-last-third-clone") {
+    if (actualBlocks[i].id === "actual-last-fourth-clone") {
         actualFull.style.transition = "none";
-        i = actualBlocks.length - 6;
+        i = actualBlocks.length - 8;
         HtmlCssProjectLeft(actualFull);
     }
 });
@@ -48,7 +52,7 @@ actualBtnLeft.addEventListener('click', () => {
 
 actualBtnRight.addEventListener('click', () => {
     var actualBlocks = document.querySelectorAll('.actual-slider-main-block');
-    if (i >= actualBlocks.length - 3) { return; }
+    if (i >= actualBlocks.length - 4) { return; }
     i++;
     HtmlCssProjectLeft(actualFull);
     actualFull.style.transition = "1s";
