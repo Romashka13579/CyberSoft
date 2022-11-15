@@ -12,6 +12,8 @@ body{
     width: 100%;
     flex-direction: column;
     gap: 80px;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .navbar{
@@ -19,18 +21,17 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    top: 15px;
     z-index: 3;
+    background: #151515;
 }
 
 .navbar-block{
-    width: 770px;
+    width: 700px;
     padding: 7px 16px;
     background: #151515;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    border-radius: 8px;
     align-items: center;
     margin: 0px 30px;
 }
@@ -71,6 +72,8 @@ body{
     flex-direction: column;
     gap: 40px;
     margin: 0px auto;
+    /* transform: translateX(200%);
+    transition: transform 0.4s ease; */
 }
 
 .actual-slider-top{
@@ -353,7 +356,6 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    overflow: hidden;
     max-width: 1490px;
 }
 
@@ -362,7 +364,8 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.order-types-main-left{
+.order-types-main-left,
+.order-types-main-left-2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -371,6 +374,13 @@ body{
     align-items: center;
     backdrop-filter: blur(30px);
     gap: 20px;
+    transform: translateX(100vw);
+    transition: transform 0.6s ease;
+}
+
+.order-types-main-left-2{
+    transform: translateX(-100vw);
+    transition: transform 0.6s ease;
 }
 
 .order-types-main-txt{
@@ -393,15 +403,27 @@ body{
     opacity: 1;
 }
 
-.order-types-main-description{
+.order-types-main-description, 
+.order-types-main-description-2{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(30px);
     color: white;
     font-size: 16px;
+    transform: translateX(-100vw);
+    transition: transform 0.6s ease;
+}
+
+.order-types-main-description-2{
+    transform: translateX(100vw);
+}
+
+.show{
+    transform: translateX(0px);
 }
 
 .order-footer{
+    position: relative;
     width: 100%;
     height: 210px;
     background-color: #202020;

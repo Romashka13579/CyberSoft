@@ -140,3 +140,48 @@ orderbarBtn.addEventListener('click', () => {
     orderbarDropdownTxt.value = "";
     orderbarDropdownTxt2.value = "";
 });
+
+// var orderTypesMainLefts = document.querySelectorAll('.order-types-main-left');
+
+// orderTypesMainLefts.forEach(orderTypesMainLeft => {
+//     console.log(orderTypesMainLeft.getBoundingClientRect().top);
+// });
+
+// window.addEventListener('scroll', () => {
+//     orderTypesMainLefts.forEach(orderTypesMainLeft => {
+//         if (Math.round(scrolled) == 1000) {
+//             orderTypesMainLeft.style.transform = "translateX(0%)";
+//             console.log("a");
+//         }
+//     });
+// });
+
+var orderLefts = document.querySelectorAll('.order-types-main-left');
+var orderDescriptions = document.querySelectorAll('.order-types-main-description');
+
+window.addEventListener('scroll', Scrolling);
+
+Scrolling();
+
+function Scrolling() {
+    orderLefts.forEach(orderLeft => {
+        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height/1.4);
+        var orderLeftTop = orderLeft.getBoundingClientRect().top;
+        if (orderLeftTop < LeftTrigger) {
+            orderLeft.classList.add('show');
+        }
+        else {
+            orderLeft.classList.remove('show');
+        }
+    });
+    orderDescriptions.forEach(orderDescription => {
+        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height/1.4);
+        var orderDescriptionTop = orderDescription.getBoundingClientRect().top;
+        if (orderDescriptionTop < DescriptionTrigger) {
+            orderDescription.classList.add('show');
+        }
+        else {
+            orderDescription.classList.remove('show');
+        }
+    })
+}
