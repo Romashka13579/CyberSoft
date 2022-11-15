@@ -141,21 +141,6 @@ orderbarBtn.addEventListener('click', () => {
     orderbarDropdownTxt2.value = "";
 });
 
-// var orderTypesMainLefts = document.querySelectorAll('.order-types-main-left');
-
-// orderTypesMainLefts.forEach(orderTypesMainLeft => {
-//     console.log(orderTypesMainLeft.getBoundingClientRect().top);
-// });
-
-// window.addEventListener('scroll', () => {
-//     orderTypesMainLefts.forEach(orderTypesMainLeft => {
-//         if (Math.round(scrolled) == 1000) {
-//             orderTypesMainLeft.style.transform = "translateX(0%)";
-//             console.log("a");
-//         }
-//     });
-// });
-
 var orderLefts = document.querySelectorAll('.order-types-main-left');
 var orderDescriptions = document.querySelectorAll('.order-types-main-description');
 
@@ -165,7 +150,7 @@ Scrolling();
 
 function Scrolling() {
     orderLefts.forEach(orderLeft => {
-        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height/1.4);
+        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height/2);
         var orderLeftTop = orderLeft.getBoundingClientRect().top;
         if (orderLeftTop < LeftTrigger) {
             orderLeft.classList.add('show');
@@ -175,7 +160,7 @@ function Scrolling() {
         }
     });
     orderDescriptions.forEach(orderDescription => {
-        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height/1.4);
+        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height/2);
         var orderDescriptionTop = orderDescription.getBoundingClientRect().top;
         if (orderDescriptionTop < DescriptionTrigger) {
             orderDescription.classList.add('show');
@@ -183,5 +168,36 @@ function Scrolling() {
         else {
             orderDescription.classList.remove('show');
         }
-    })
+    });
 }
+
+var sliderBlocks1 = document.querySelectorAll('.slider-block-1');
+var sliderBlocks2 = document.querySelectorAll('.slider-block-2');
+var sliderBlocks3 = document.querySelectorAll('.slider-block-3');
+
+Start();
+
+function Start() {
+    sliderBlocks2.forEach(sliderBlock2 => {
+        sliderBlock2.style.opacity = "1";
+    });
+}
+
+sliderBlocks2.forEach(sliderBlock2 => {
+    sliderBlock2.addEventListener('transitionend', () => {
+        if(sliderBlock2.style.opacity == "1"){
+            sliderBlocks1.forEach(sliderBlock1 => {
+                sliderBlock1.style.opacity = "1";
+            });
+        }
+    });
+});
+sliderBlocks1.forEach(sliderBlock1 => {
+    sliderBlock1.addEventListener('transitionend', () => {
+        if(sliderBlock1.style.opacity == "1"){
+            sliderBlocks3.forEach(sliderBlock3 => {
+                sliderBlock3.style.opacity = "1";
+            });
+        }
+    });
+});

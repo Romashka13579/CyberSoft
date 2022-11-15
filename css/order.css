@@ -152,6 +152,17 @@ body{
     overflow: hidden;
 }
 
+.slider-block-1,
+.slider-block-2,
+.slider-block-3{
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.slider-block-2{
+    transition: opacity 400ms;
+}
+
 .actual-slider-image{
     background: rgb(95, 95, 95);
 }
