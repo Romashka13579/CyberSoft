@@ -150,7 +150,7 @@ Scrolling();
 
 function Scrolling() {
     orderLefts.forEach(orderLeft => {
-        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height/2);
+        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height / 2);
         var orderLeftTop = orderLeft.getBoundingClientRect().top;
         if (orderLeftTop < LeftTrigger) {
             orderLeft.classList.add('show');
@@ -160,7 +160,7 @@ function Scrolling() {
         }
     });
     orderDescriptions.forEach(orderDescription => {
-        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height/2);
+        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height / 2);
         var orderDescriptionTop = orderDescription.getBoundingClientRect().top;
         if (orderDescriptionTop < DescriptionTrigger) {
             orderDescription.classList.add('show');
@@ -176,21 +176,18 @@ var sliderBlocks2 = document.querySelectorAll('.slider-block-2');
 var sliderBlocks3 = document.querySelectorAll('.slider-block-3');
 var sliderBlocks4 = document.querySelectorAll('.slider-block-4');
 
-Start();
+sliderBlocks2.forEach(sliderBlock2 => {
+    sliderBlock2.style.opacity = "1";
+});
 
-function Start() {
-    sliderBlocks2.forEach(sliderBlock2 => {
-        sliderBlock2.style.opacity = "1";
-    });
-}
 StartTransitionEnd(sliderBlocks2, sliderBlocks1);
 StartTransitionEnd(sliderBlocks1, sliderBlocks3);
 StartTransitionEnd(sliderBlocks3, sliderBlocks4);
 
-function StartTransitionEnd(sliderBlocks_1, sliderBlocks_2){
+function StartTransitionEnd(sliderBlocks_1, sliderBlocks_2) {
     sliderBlocks_1.forEach(sliderBlock_1 => {
         sliderBlock_1.addEventListener('transitionend', () => {
-            if(sliderBlock_1.style.opacity == "1"){
+            if (sliderBlock_1.style.opacity == "1") {
                 sliderBlocks_2.forEach(sliderBlock_2 => {
                     sliderBlock_2.style.opacity = "1";
                 });
