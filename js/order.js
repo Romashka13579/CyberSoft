@@ -183,31 +183,18 @@ function Start() {
         sliderBlock2.style.opacity = "1";
     });
 }
+StartTransitionEnd(sliderBlocks2, sliderBlocks1);
+StartTransitionEnd(sliderBlocks1, sliderBlocks3);
+StartTransitionEnd(sliderBlocks3, sliderBlocks4);
 
-sliderBlocks2.forEach(sliderBlock2 => {
-    sliderBlock2.addEventListener('transitionend', () => {
-        if(sliderBlock2.style.opacity == "1"){
-            sliderBlocks1.forEach(sliderBlock1 => {
-                sliderBlock1.style.opacity = "1";
-            });
-        }
+function StartTransitionEnd(sliderBlocks_1, sliderBlocks_2){
+    sliderBlocks_1.forEach(sliderBlock_1 => {
+        sliderBlock_1.addEventListener('transitionend', () => {
+            if(sliderBlock_1.style.opacity == "1"){
+                sliderBlocks_2.forEach(sliderBlock_2 => {
+                    sliderBlock_2.style.opacity = "1";
+                });
+            }
+        });
     });
-});
-sliderBlocks1.forEach(sliderBlock1 => {
-    sliderBlock1.addEventListener('transitionend', () => {
-        if(sliderBlock1.style.opacity == "1"){
-            sliderBlocks3.forEach(sliderBlock3 => {
-                sliderBlock3.style.opacity = "1";
-            });
-        }
-    });
-});
-sliderBlocks3.forEach(sliderBlock3 => {
-    sliderBlock3.addEventListener('transitionend', () => {
-        if(sliderBlock3.style.opacity == "1"){
-            sliderBlocks4.forEach(sliderBlock4 => {
-                sliderBlock4.style.opacity = "1";
-            });
-        }
-    });
-});
+}
