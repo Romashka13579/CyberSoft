@@ -25,6 +25,7 @@
     flex-direction: column;
     gap: 12px;
     background: rgb(222, 222, 222);
+    padding-bottom: 12px;
 }
 
 .team-people-card-image{
@@ -42,16 +43,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .team-people-card-name{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
 }
 
 .team-people-card-icon{
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 50%;
     background: url(../img/IMG_20191108_211653.jpg) center/cover;
@@ -69,8 +71,8 @@
 }
 
 .team-people-card-links{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 12px;
     margin-left: auto;
 }
@@ -78,8 +80,10 @@
 .team-people-card-link{
     width: 25px;
     height: 25px;
+    border-radius: 50%;
 }
 
-.link-git{background: url(../img/github.png) center/cover;}
-.link-instagram{background: url(../img/instagram.png) center/cover;}
-.link-other{background: url(../img/planet-earth.png) center/cover;}
+.link-1{background: url(../img/github.png) center/cover;}
+.link-2{background: url(../img/instagram.png) center/cover;}
+.link-3{background: url(../img/figma.png) center/cover;}
+.link-4{background: url(../img/telegram.png) center/cover;}
