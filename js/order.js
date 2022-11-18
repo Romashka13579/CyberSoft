@@ -174,6 +174,7 @@ function Scrolling() {
 var sliderBlocks1 = document.querySelectorAll('.slider-block-1');
 var sliderBlocks2 = document.querySelectorAll('.slider-block-2');
 var sliderBlocks3 = document.querySelectorAll('.slider-block-3');
+var sliderBlocks4 = document.querySelectorAll('.slider-block-4');
 
 Start();
 
@@ -197,6 +198,15 @@ sliderBlocks1.forEach(sliderBlock1 => {
         if(sliderBlock1.style.opacity == "1"){
             sliderBlocks3.forEach(sliderBlock3 => {
                 sliderBlock3.style.opacity = "1";
+            });
+        }
+    });
+});
+sliderBlocks3.forEach(sliderBlock3 => {
+    sliderBlock3.addEventListener('transitionend', () => {
+        if(sliderBlock3.style.opacity == "1"){
+            sliderBlocks4.forEach(sliderBlock4 => {
+                sliderBlock4.style.opacity = "1";
             });
         }
     });
