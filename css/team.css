@@ -26,6 +26,8 @@
     gap: 12px;
     background: rgb(222, 222, 222);
     padding-bottom: 12px;
+    transform: translateX(100vw);
+    transition: transform 1.5s cubic-bezier(.6,0,.39,1.21);
 }
 
 .team-people-card-image{
@@ -87,3 +89,7 @@
 .link-2{background: url(../img/instagram.png) center/cover;}
 .link-3{background: url(../img/figma.png) center/cover;}
 .link-4{background: url(../img/telegram.png) center/cover;}
+
+.show{
+    transform: translateX(0px);
+}

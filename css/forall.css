@@ -201,10 +201,31 @@ body{
     text-shadow: 0 0 0.5px white, 0 0 1px white, 0 0 5px white;
 }
 
+.order-footer{
+    position: relative;
+    width: 100%;
+    height: 210px;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+.order-footer-txt{
+    font-size: 18px;
+}
 
-
-
+.order-footer-contects,
+.order-footer-description{
+    font-size: 12px;
+    max-width: 400px;
+    margin: 0px 20px;
+}
 
 @media screen and (max-width:400px) {
     .navbar-block{
