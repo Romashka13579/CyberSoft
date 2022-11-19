@@ -66,3 +66,60 @@ function Checking(i) {
         else if (i % 3 == 2) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 300); }
     }
 }
+function overlayon1() {
+    document.getElementById("overlay1").style.display = "block";
+    }
+    function overlayoff1() {
+    document.getElementById("overlay1").style.display = "none";
+    }
+    
+    function overlayon2() {
+    document.getElementById("overlay2").style.display = "block";
+    }
+    function overlayoff2() {
+    document.getElementById("overlay2").style.display = "none";
+    }
+    
+    function overlayon3() {
+    document.getElementById("overlay3").style.display = "block";
+    }
+    function overlayoff3() {
+    document.getElementById("overlay3").style.display = "none";
+    }
+    
+    function overlayon4() {
+    document.getElementById("overlay4").style.display = "block";
+    }
+    function overlayoff4() {
+    document.getElementById("overlay4").style.display = "none";
+    }
+    
+    function overlayon5() {
+    document.getElementById("overlay5").style.display = "block";
+    }
+    function overlayoff5() {
+    document.getElementById("overlay5").style.display = "none";
+    }
+    
+    function overlayon6() {
+    document.getElementById("overlay6").style.display = "block";
+    }
+    function overlayoff6() {
+    document.getElementById("overlay6").style.display = "none";
+    }
+    
+    function overlayon7() {
+    document.getElementById("overlay7").style.display = "block";
+    }
+    function overlayoff7() {
+    document.getElementById("overlay7").style.display = "none";
+    }
+    
+    function overlayon8() {
+    document.getElementById("overlay8").style.display = "block";
+    }
+    
+    function overlayoff8() {
+    document.getElementById("overlay8").style.display = "none";
+    }
+    
