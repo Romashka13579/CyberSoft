@@ -4,7 +4,7 @@ var actualOverflow = document.querySelector('.actual-slider-main-overflow');
 var actualFull = document.querySelector('.actual-slider-main-full');
 var actualBlocks = document.querySelectorAll('.actual-slider-main-block');
 
-var i = 3;
+var i = 4;
 
 var actualFirstClone = actualBlocks[0].cloneNode(true);
 var actualSecondClone = actualBlocks[1].cloneNode(true);
@@ -34,34 +34,32 @@ actualFull.addEventListener('transitionend', () => {
     if (actualBlocks[i + 3].id === "actual-fourth-clone") {
         actualFull.style.transition = "none";
         i = 4;
-        HtmlCssProjectLeft(actualFull);
+        actualFull.style.left = "" + (-390 * i) + "px";
     }
     if (actualBlocks[i].id === "actual-last-fourth-clone") {
         actualFull.style.transition = "none";
         i = actualBlocks.length - 8;
-        HtmlCssProjectLeft(actualFull);
+        actualFull.style.left = "" + (-390 * i) + "px";
     }
 });
 
-actualBtnLeft.addEventListener('click', () => {
+actualBtnLeft.addEventListener('click', ScrollLeft);
+actualBtnRight.addEventListener('click', ScrollRight);
+
+function ScrollLeft() {
     if (i <= 0) { return; }
     i--;
-    HtmlCssProjectLeft(actualFull);
+    actualFull.style.left = "" + (-390 * i) + "px";
     actualFull.style.transition = "1s";
-});
+}
 
-actualBtnRight.addEventListener('click', () => {
+function ScrollRight() {
     var actualBlocks = document.querySelectorAll('.actual-slider-main-block');
     if (i >= actualBlocks.length - 4) { return; }
     i++;
-    HtmlCssProjectLeft(actualFull);
+    actualFull.style.left = "" + (-390 * i) + "px";
     actualFull.style.transition = "1s";
-});
-
-function HtmlCssProjectLeft(obj) {
-    obj.style.left = "" + (-390 * i) + "px";
 }
-
 
 var orderbarBlocksType = document.querySelectorAll('.orderbar-block-type');
 
@@ -150,9 +148,10 @@ Scrolling();
 
 function Scrolling() {
     orderLefts.forEach(orderLeft => {
-        var LeftTrigger = (window.innerHeight - orderLeft.getBoundingClientRect().height / 2);
+        var LeftTrigger1 = (window.innerHeight - orderLeft.getBoundingClientRect().height / 2);
+        var LeftTrigger2 = (-orderLeft.getBoundingClientRect().height / 2);
         var orderLeftTop = orderLeft.getBoundingClientRect().top;
-        if (orderLeftTop < LeftTrigger) {
+        if (orderLeftTop < LeftTrigger1 && orderLeftTop > LeftTrigger2) {
             orderLeft.classList.add('show');
         }
         else {
@@ -160,9 +159,10 @@ function Scrolling() {
         }
     });
     orderDescriptions.forEach(orderDescription => {
-        var DescriptionTrigger = (window.innerHeight - orderDescription.getBoundingClientRect().height / 2);
+        var DescriptionTrigger1 = (window.innerHeight - orderDescription.getBoundingClientRect().height / 2);
+        var DescriptionTrigger2 = (-orderDescription.getBoundingClientRect().height / 2);
         var orderDescriptionTop = orderDescription.getBoundingClientRect().top;
-        if (orderDescriptionTop < DescriptionTrigger) {
+        if (orderDescriptionTop < DescriptionTrigger1 && orderDescriptionTop > DescriptionTrigger2) {
             orderDescription.classList.add('show');
         }
         else {
