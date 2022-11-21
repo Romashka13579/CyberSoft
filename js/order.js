@@ -148,8 +148,8 @@ Scrolling();
 
 function Scrolling() {
     orderLefts.forEach(orderLeft => {
-        var LeftTrigger1 = (window.innerHeight - orderLeft.getBoundingClientRect().height / 2);
-        var LeftTrigger2 = (-orderLeft.getBoundingClientRect().height / 2);
+        var LeftTrigger1 = (window.innerHeight - orderLeft.getBoundingClientRect().height / 3);
+        var LeftTrigger2 = (-orderLeft.getBoundingClientRect().height / 1.5 + 90);
         var orderLeftTop = orderLeft.getBoundingClientRect().top;
         if (orderLeftTop < LeftTrigger1 && orderLeftTop > LeftTrigger2) {
             orderLeft.classList.add('show');
@@ -159,8 +159,8 @@ function Scrolling() {
         }
     });
     orderDescriptions.forEach(orderDescription => {
-        var DescriptionTrigger1 = (window.innerHeight - orderDescription.getBoundingClientRect().height / 2);
-        var DescriptionTrigger2 = (-orderDescription.getBoundingClientRect().height / 2);
+        var DescriptionTrigger1 = (window.innerHeight - orderDescription.getBoundingClientRect().height / 3);
+        var DescriptionTrigger2 = (-orderDescription.getBoundingClientRect().height / 1.5 + 90);
         var orderDescriptionTop = orderDescription.getBoundingClientRect().top;
         if (orderDescriptionTop < DescriptionTrigger1 && orderDescriptionTop > DescriptionTrigger2) {
             orderDescription.classList.add('show');
