@@ -1,0 +1,130 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #D5D7DE;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: #21262D;
+    box-shadow: 0px 4px 10px rgba(8, 10, 46, 0.6);
+    padding: 15px 40px;
+    box-sizing: border-box;
+    z-index: 3;
+    top: 0px;
+}
+
+.navbar-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left-logo{
+    width: 90px;
+    height: 60px;
+    background: #EAEAEA;
+}
+
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.navbar-center-link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.navbar-center-link:active{
+    color: #2F97FF;
+}
+
+.navbar-rigth-contact-us{
+    box-sizing: border-box;
+    padding: 3px 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    cursor: pointer;
+    transition: color 300ms, border 300ms;
+}
+
+.navbar-rigth-contact-us:hover{
+    border: 1px solid #2F97FF;
+    color: #2F97FF;
+}
+
+.footer{
+    width: 100%;
+    height: 25vh;
+    background: rgb(25, 25, 25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10vh;
+    color: white;
+}
+.footer p{
+    width: 20%;
+    margin-top: -8vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer h2{
+    margin-top: 18px;
+}
+.contactsblock{
+    width: 8%;
+    height: 3vh;
+    margin-top: -5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact{
+    width: 3vh;
+    height: 3vh;
+    margin: 0 auto;
+}
+.contact img{
+    width: 100%;
+    filter: invert();
+}
+.order-page{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("file:///C:/Users/lapin/Downloads/701802.jpg");
+}

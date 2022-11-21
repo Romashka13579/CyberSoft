@@ -1,10 +1,16 @@
 .actual-orders{
     position: relative;
     display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #D5D7DE 0%, #D5D7DE 76.35%, #C7C9D3 100%);
+}
+
+.actual-orders-inside{
+    position: relative;
+    display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 0px auto;
-    margin-top: 116px;
+    margin: 170px auto 80px auto;
 }
 
 .actual-slider-top{
@@ -24,28 +30,24 @@
 .actual-slider-top-txt{
     font-size: 40px;
     font-weight: 600;
-}
-
-.actual-slider-top-line{
-    height: 3px;
-    border-radius: 2px;
-    background: #151515;
+    color: rgb(0, 0, 0);
 }
 
 .actual-slider-top-btnleft,
 .actual-slider-top-btnright{
     display: flex;
-    border: 2px solid #151515;
-    border-radius: 50%;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 20%;
     height: 50px;
     padding: 0px;
-    background: rgba(255, 255, 255, 0.6);
     transition: background 250ms;
 }
 
 .actual-slider-top-btnleft:active,
 .actual-slider-top-btnright:active{
-    background: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 155, 90);
 }
 
 .actual-slider-top-arrow{
@@ -67,19 +69,20 @@
     gap: 70px;
     transition: left 1s;
     left: -1560px;
+
 }
 
 .actual-slider-main-block{
     width: 320px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
     display: grid;
-    grid-template-rows: 200px 1fr 3px auto;
+    grid-template-rows: 200px 1fr auto;
     gap: 15px;
     padding-bottom: 15px;
     box-sizing: border-box;
-    backdrop-filter: blur(30px);
     overflow: hidden;
 }
 
@@ -105,13 +108,13 @@
 
 .actual-slider-line{
     height: 3px;
-    background: rgb(95, 95, 95);
 }
 
 .actual-slider-underline{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: -20px;
 }
 
 .actual-slider-txt{
@@ -120,9 +123,9 @@
 }
 
 .actual-slider-cost{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    color: red;
+    color: rgb(0, 155, 90);
 }
 
 .actual-slider-more{
@@ -145,18 +148,18 @@
 
 .actual-slider-more:hover > .actual-slider-more-icon{
     margin: 0px 0px 0px 20px;
-    color: #69aed8;
+    color: rgb(0, 155, 90);
 }
 
 .actual-slider-more:hover{
-    color: #69aed8;
+    color: rgb(0, 155, 90);
 }
 
 .orderbar{
     width: 100%;
-    background: #151515;
-    border-top: 4px solid white;
-    padding: 30px 0px 20px 0px;
+    height: 300px;
+    background: #161616;
+    padding: 100px 0px 20px 0px;
     box-sizing: border-box;
 }
 
@@ -180,7 +183,7 @@
 .orderbar-block-top{
     display: flex;
     gap: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     align-items: center;
 }
@@ -194,9 +197,10 @@
     padding: 10px 15px;
     font-size: 18px;
     font-weight: 600;
-    background: rgb(172, 172, 172);
-    border: 1px solid white;
-    border-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 10px;
     color: white;
     gap: 10px;
     align-items: center;
@@ -219,9 +223,8 @@
     position: absolute;
     flex-direction: column;
     padding: 5px 0px;
-    background: rgb(172, 172, 172);
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
     top: 56px;
     left: 0px;
     z-index: 2;
@@ -248,9 +251,11 @@
     padding: 10px 15px;
     font-size: 18px;
     font-weight: 600;
-    background: rgb(150, 10, 10);
-    border: 1px solid white;
+    background: rgb(6, 141, 29);
+    border: 2px solid white;
     color: white;
+    border-radius: 10px;
+    margin-left: 10px;
     outline: none;
     box-sizing: border-box;
     width: max-content;
@@ -283,12 +288,7 @@
 .order-types-top-txt{
     font-size: 40px;
     font-weight: 600;
-}
-
-.order-types-top-line{
-    height: 3px;
-    border-radius: 2px;
-    background: #151515;
+    color: rgb(0, 0, 0);
 }
 
 .order-types-main{
@@ -309,17 +309,17 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgb(255, 255, 255, 0.2);
     align-items: center;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     gap: 20px;
     transform: translateX(100vw);
-    transition: transform 0.6s ease;
+    transition: transform 0.5s;
 }
 
 .order-types-main-left-2{
     transform: translateX(-100vw);
-    transition: transform 0.6s ease;
+    transition: transform 0.5s;
 }
 
 .order-types-main-txt{
@@ -346,15 +346,16 @@
 .order-types-main-description-2{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     color: white;
     font-size: 16px;
     transform: translateX(-100vw);
-    transition: transform 0.6s ease;
+    transition: transform 0.5s;
 }
 
 .order-types-main-description-2{
     transform: translateX(100vw);
+    transition: transform 0.5s;
 }
 
 .show{

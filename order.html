@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forallorder.css">
     <link rel="stylesheet" href="css/order.css">
-    <link rel="stylesheet" href="css/forall.css">
+    <!-- <link rel="stylesheet" href="css/team.css"> -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script defer type="text/javascript" src="js/order.js"></script>
     <title>Order</title>
 </head>
@@ -16,169 +21,129 @@
     <div class="order-page">
         <div class="navbar">
             <div class="navbar-block">
-                <div class="navbar-left">
-                    <div class="navbar-left">
-                        <a href="./order.html" class="navbar-apple fa-brands fa-apple"></a>
-                        <div class="navbar-color fa-solid fa-palette">
-                            <div class="navbar-color-absolute">
-                                <div class="navbar-color-block">
-                                    <div class="navbar-color-triangle"></div>
-                                    <div class="navbar-color-item">
-                                        <div class="navbar-color-colorpick"></div>
-                                        <div class="navbar-color-txt">Turquoise beach</div>
-                                    </div>
-                                    <div class="navbar-color-item">
-                                        <div class="navbar-color-colorpick" style="background-color: #74523f;"></div>
-                                        <div class="navbar-color-txt">Morning latte</div>
-                                    </div>
-                                    <div class="navbar-color-item">
-                                        <div class="navbar-color-colorpick" style="background-color: #2e2e2e;"></div>
-                                        <div class="navbar-color-txt">Night mountain</div>
-                                    </div>
-                                    <div class="navbar-color-item">
-                                        <div class="navbar-color-colorpick"
-                                            style="background-color: rgb(159, 221, 211);"></div>
-                                        <div class="navbar-color-txt">Snowy forest</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="navbar-translate fa-solid fa-globe">
-                            <div class="navbar-translate-absolute">
-                                <div class="navbar-translate-block">
-                                    <div class="navbar-translate-triangle"></div>
-                                    <div class="navbar-translate-item">Ukr</div>
-                                    <div class="navbar-translate-item">Pol</div>
-                                    <div class="navbar-translate-item">Eng</div>
-                                    <div class="navbar-translate-item">Dth</div>
-                                    <div class="navbar-translate-item">Frn</div>
-                                    <div class="navbar-translate-item">Swd</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <a href="index.html" class="navbar-left-logo"></a>
+                <div class="navbar-center">
+                    <a href="team.html" class="navbar-center-link">Home</a>
+                    <a href="team.html" class="navbar-center-link">About our company</a>
+                    <a href="team.html" class="navbar-center-link">Team</a>
+                    <a href="team.html" class="navbar-center-link">Our projects</a>
+                    <a href="team.html" class="navbar-center-link">Order</a>
                 </div>
-                <div class="navbar-rigth">
-                    <div class="navbar-txt">
-                        <a href="index.html" class="navbar-txt-link">home</a>
-                        <div class="navbar-txt-absolute">
-                            <div class="navbar-txt-block">
-                                <div class="navbar-txt-triangle"></div>
-                                <a href="./index.html#page2" class="navbar-txt-item">team</a>
-                                <a href="./index.html#page3" class="navbar-txt-item">company</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-txt">
-                        <a href="team.html" class="navbar-txt-link">team</a>
-                    </div>
-                    <div class="navbar-txt">
-                        <a href="company.html" class="navbar-txt-link">company</a>
-                    </div>
-                    <div class="navbar-txt">
-                        <a href="order.html" class="navbar-txt-link">order</a>
-                    </div>
-                </div>
+                <button class="navbar-rigth-contact-us">Contact us</button>
             </div>
         </div>
         <div class="actual-orders">
-            <div class="actual-slider-top">
-                <div class="actual-slider-top-txt">Актуальні замовлення</div>
-                <div class="actual-slider-top-line"></div>
-                <div class="actual-slider-top-btns">
-                    <button class="actual-slider-top-btnleft">
-                        <div class="actual-slider-top-arrow fa-solid fa-arrow-left"></div>
-                    </button>
-                    <button class="actual-slider-top-btnright">
-                        <div class="actual-slider-top-arrow fa-solid fa-arrow-right"></div>
-                    </button>
+            <div class="actual-orders-inside">
+                <div class="actual-slider-top">
+                    <div class="actual-slider-top-txt">Актуальні замовлення</div>
+                    <div class="actual-slider-top-line"></div>
+                    <div class="actual-slider-top-btns">
+                        <button class="actual-slider-top-btnleft">
+                            <div class="actual-slider-top-arrow fa-solid fa-arrow-left"></div>
+                        </button>
+                        <button class="actual-slider-top-btnright">
+                            <div class="actual-slider-top-arrow fa-solid fa-arrow-right"></div>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="actual-slider-main">
-                <div class="actual-slider-main-overflow">
-                    <div class="actual-slider-main-full">
-                        <div class="actual-slider-main-block slider-block-1">
-                            <div class="actual-slider-image" style="background: grey;"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Mobile Aplication</div>
-                                <div class="actual-slider-description-txt">Опис</div>
+                <div class="actual-slider-main">
+                    <div class="actual-slider-main-overflow">
+                        <div class="actual-slider-main-full">
+                            <div class="actual-slider-main-block slider-block-1">
+                                <div class="actual-slider-image" style="background: grey;"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Mobile Aplication</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">100-300$</div>
+                                    <a href="./order.html#order-types-block-ma" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">200$</div>
-                                <a href="./order.html#order-types-block-ma" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
+                            <div class="actual-slider-main-block slider-block-2">
+                                <div class="actual-slider-image" style="background: rgb(83, 83, 83);"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Web Page</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">100-500$</div>
+                                    <a href="./order.html#order-types-block-wp" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="actual-slider-main-block slider-block-2">
-                            <div class="actual-slider-image" style="background: rgb(83, 83, 83);"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Web Page</div>
-                                <div class="actual-slider-description-txt">Опис</div>
+                            <div class="actual-slider-main-block slider-block-3">
+                                <div class="actual-slider-image" style="background: rgb(159, 159, 159);"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Unity Game</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">50-400$</div>
+                                    <a href="./order.html#order-types-block-g" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">100$</div>
-                                <a href="./order.html#order-types-block-wp" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
+                            <div class="actual-slider-main-block slider-block-4">
+                                <div class="actual-slider-image" style="background: rgb(36, 36, 36);"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Web Aplication</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">100-200$</div>
+                                    <a href="./order.html#order-types-block-wa" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="actual-slider-main-block slider-block-3">
-                            <div class="actual-slider-image" style="background: rgb(159, 159, 159);"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Unity Game</div>
-                                <div class="actual-slider-description-txt">Опис</div>
+                            <div class="actual-slider-main-block">
+                                <div class="actual-slider-image" style="background: rgb(154, 154, 154);"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Pc Aplication</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">100-500$</div>
+                                    <a href="./order.html#order-types-block-wa" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">130$</div>
-                                <a href="./order.html#order-types-block-g" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="actual-slider-main-block slider-block-4">
-                            <div class="actual-slider-image" style="background: rgb(36, 36, 36);"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Web Aplication</div>
-                                <div class="actual-slider-description-txt">Опис</div>
-                            </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">120$</div>
-                                <a href="./order.html#order-types-block-wa" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="actual-slider-main-block">
-                            <div class="actual-slider-image" style="background: rgb(154, 154, 154);"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Pc Aplication</div>
-                                <div class="actual-slider-description-txt">Опис</div>
-                            </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">180$</div>
-                                <a href="./order.html#order-types-block-wa" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="actual-slider-main-block">
-                            <div class="actual-slider-image" style="background: rgb(225, 225, 225);"></div>
-                            <div class="actual-slider-description">
-                                <div class="actual-slider-txt">Other</div>
-                                <div class="actual-slider-description-txt">Опис</div>
-                            </div>
-                            <div class="actual-slider-line"></div>
-                            <div class="actual-slider-underline">
-                                <div class="actual-slider-cost">50-200$</div>
-                                <a href="./order.html#order-types-block-wd" class="actual-slider-more">Більше інформації
-                                    <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
-                                </a>
+                            <div class="actual-slider-main-block">
+                                <div class="actual-slider-image" style="background: rgb(225, 225, 225);"></div>
+                                <div class="actual-slider-description">
+                                    <div class="actual-slider-txt">Other</div>
+                                    <div class="actual-slider-description-txt">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. In nobis ducimus deserunt minima, assumenda possimus iste numquam
+                                        neque, atque veritatis adipisci tenetur?</div>
+                                </div>
+                                <div class="actual-slider-line"></div>
+                                <div class="actual-slider-underline">
+                                    <div class="actual-slider-cost">50-1000$</div>
+                                    <a href="./order.html#order-types-block-wd" class="actual-slider-more">Більше інформації
+                                        <div class="actual-slider-more-icon fa-solid fa-arrow-right"></div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -250,7 +215,8 @@
                 </div>
                 <div class="order-types-main">
                     <div class="order-types-main-block" id="order-types-block-ma">
-                        <div class="order-types-main-left order-types-main-left-2">
+                        <div class="order-types-main-left order-types-main-left-2"
+                            style="border-top-left-radius: 10px;">
                             <div class="order-types-main-txt">Мобільний додаток</div>
                             <div class="order-types-main-links">
                                 <a href="#" class="order-types-main-link"></a>
@@ -259,7 +225,8 @@
                                 <a href="#" class="order-types-main-link"></a>
                             </div>
                         </div>
-                        <div class="order-types-main-description order-types-main-description-2">Eaque aliquam delectus
+                        <div class="order-types-main-description order-types-main-description-2"
+                            style="border-top-right-radius: 10px;">Eaque aliquam delectus
                             et. Possimus repellat
                             praesentium
                             sunt omnis excepturi aperiam! Lorem, iPossimus repellat praesentium sunt omnis excepturi
@@ -348,7 +315,8 @@
                             consectetur adipisicing el.</div>
                     </div>
                     <div class="order-types-main-block" id="order-types-block-wa">
-                        <div class="order-types-main-description">Eaque aliquam delectus et. Possimus repellat
+                        <div class="order-types-main-description" style="border-bottom-left-radius: 10px;">Eaque aliquam
+                            delectus et. Possimus repellat
                             praesentium
                             sunt omnis excepturi aperiam! Lorem, iPossimus repellat praesentium sunt omnis excepturi
                             aperiam! Lorem, ipsum dolor sit amet consectetur adipisicipsum dolor sit amet consectetur
@@ -356,7 +324,7 @@
                             asperiores fuga quod nostrum, odit omnis minus magni recusandae, eaque aliquam delectus et.
                             Possimus repellat praesentium sunt omnis excepturi aperiam! Lorem, ipsum dolor sit amet
                             consectetur adipisicing el.</div>
-                        <div class="order-types-main-left">
+                        <div class="order-types-main-left" style="border-bottom-right-radius: 10px;">
                             <div class="order-types-main-txt">Веб додаток</div>
                             <div class="order-types-main-links">
                                 <a href="#" class="order-types-main-link"></a>
@@ -369,14 +337,21 @@
                 </div>
             </div>
         </div>
-        <div class="order-footer">
-            <div class="order-footer-txt">Footer Shmuter</div>
-            <div class="order-footer-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quia
-                non odio fugiat provident soluta voluptas iusto illum quasi natus aperiam nobis, ex inventore deserunt
-                ea aliquam quas magnam facere?</div>
-            <div class="order-footer-contects">yegor.lapin@gmail.com | +380(98)-546-6967</div>
+        <div class="footer">
+            <h2>Footer Shmuter</h2>
+            <div class="footertext"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quia non odio fugiat provident soluta
+                voluptas iusto illum quasi natus aperiam nobis, ex inventore deserunt ea aliquam quas magnam facere?</p>
+            <p style="margin-top: -5vh;">yegor.lapin@gmail.com | +380(98)-546-6967</p>
+            <div class="contactsblock">
+                <a href="" class="contact"><img src="file:///C:/Users/lapin/Downloads/free-icon-facebook-3536423.png"
+                        alt=""></a>
+                <a href="" class="contact"><img src="file:///C:/Users/lapin/Downloads/instagram%20(2).png" alt=""></a>
+                <a href="" class="contact"><img src="file:///C:/Users/lapin/Downloads/tiktok.png" alt=""></a>
+            </div>
         </div>
     </div>
+    <script src="team.js"></script>
 </body>
 
 </html>
