@@ -311,6 +311,13 @@
 }
 
 .order-types{
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.order-types-inside{
+    padding: 80px 0px;
     margin: 0px auto;
 }
 
@@ -326,16 +333,39 @@
 .order-types-top{
     max-width: 1490px;
     position: relative;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .order-types-top-txt{
-    font-size: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    font-size: 49px;
+    text-align: center;
+    color: #000000;
+}
+
+.order-types-top-btn{
+    box-sizing: border-box;
+    padding: 5px 15px;
+    border: 2px solid #21262D;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #21262D;
+    background: none;
+    cursor: pointer;
+    transition: color 300ms, border 300ms;
+}
+
+.order-types-top-btn:hover{
+    border: 2px solid #2F97FF;
+    color: #2F97FF;
 }
 
 .order-types-main{
@@ -356,7 +386,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
-    background: rgb(255, 255, 255, 0.2);
+    background: #dedede9c;
     align-items: center;
     backdrop-filter: blur(10px);
     gap: 20px;
@@ -392,7 +422,7 @@
 .order-types-main-description, 
 .order-types-main-description-2{
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: #21262D;
     backdrop-filter: blur(10px);
     color: white;
     font-size: 16px;
