@@ -75,6 +75,23 @@ body {
     color: #2F97FF;
 }
 
+.navbar-rigth-burger-menu{
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.navbar-rigth-burger-menu-icon{
+    color: white;
+    font-size: 60px;
+    transition: color 200ms;
+}
+
+.navbar-rigth-burger-menu:active > .navbar-rigth-burger-menu-icon{
+    color: #2F97FF;
+}
+
 .footer {
     width: 100%;
     background: #21262D;
@@ -119,9 +136,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("file:///C:/Users/lapin/Downloads/701802.jpg");
+}
+
+@media screen and (max-width:1200px) {
+    .navbar-rigth-burger-menu{
+        display: block;
+    }
+    .navbar-rigth-contact-us,
+    .navbar-center{
+        display: none;
+    }
 }

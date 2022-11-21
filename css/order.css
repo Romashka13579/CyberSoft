@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 40px;
     margin: 170px auto 60px auto;
+    transform: translateX(15px);
 }
 
 .actual-slider-top{
@@ -380,6 +381,11 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+#order-types-bottom-2{border-bottom-left-radius: 10px;}
+#order-types-bottom-1{border-bottom-right-radius: 10px;}
+#order-types-top-1{border-top-left-radius: 10px;}
+#order-types-top-2{border-top-right-radius: 10px;}
+
 .order-types-main-left,
 .order-types-main-left-2{
     display: flex;
@@ -441,16 +447,20 @@
 
 @media screen and (min-width:1590px) {
     .actual-slider-top{
-        max-width: 1490px;
+        max-width: 1520px;
     }
     .actual-slider-main-overflow {
-        width: 1490px;
+        width: 1520px;
     }
 }
 
 @media screen and (max-width:1200px) {
+    .actual-slider-top{
+        flex-direction: column;
+        gap: 10px;
+    }
     .actual-slider-main-overflow {
-        width: 710px;
+        width: 740px;
     }
 }
 
@@ -476,6 +486,15 @@
     .orderbar-block-dropdown,
     .orderbar-block-dropdown-2{
         border: 1px solid white;
+    }
+}
+
+@media screen and (max-width:900px){
+    .order-types-top{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 }
 
@@ -512,8 +531,17 @@
         margin: 0px auto;
     }
     .actual-slider-main-overflow {
-        width: 320px;
+        width: 350px;
     }
+    .order-types-main-description, .order-types-main-description-2{
+        text-align: center;
+    }
+    #order-types-bottom-1{border-bottom-left-radius: 0px;}
+    #order-types-bottom-2{border-bottom-left-radius: 10px;}
+    #order-types-bottom-2{border-bottom-right-radius: 10px;}
+    #order-types-top-1{border-top-left-radius: 10px;}
+    #order-types-top-1{border-top-right-radius: 10px;}
+    #order-types-top-2{border-top-right-radius: 0px;}
 }
 
 
@@ -532,22 +560,17 @@
 }
 
 @media screen and (max-width:616px) {
-    .orderbar{
-        display: flex;
-        justify-content: center;
-    }
     .orderbar-blocks{
         gap: 20px;
         flex-direction: column;
         width: fit-content;
+        margin: 30px auto;
     }
 }
 
 @media screen and (max-width:500px) {
-    .order-types-main{
-        width: 300px;
-    }
     .order-types-block{
+        width: 300px;
         margin: 0px auto;
     }
 }
