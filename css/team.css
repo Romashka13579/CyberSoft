@@ -25,6 +25,7 @@
     text-shadow: 0 0 20px rgb(44, 44, 44);
     margin-right: 400px;
     max-width: 1000px;
+    animation: startText1 0.9s;
 }
 
 .our-team-txt-2{
@@ -33,6 +34,33 @@
     font-weight: 600;
     margin: 0px 20px 0px 0px;
     color: white;
+    animation: startText2 1s;
+}
+
+@keyframes startText1{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes startText2{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .our-team-underline{
