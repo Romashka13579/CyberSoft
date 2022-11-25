@@ -47,20 +47,20 @@ function Checking(i) {
     var teamPeopleCards = document.querySelectorAll('.team-people-card');
     var main = document.querySelector('.main');
 
-    if (main.offsetWidth > 1450) {
+    if (main.offsetWidth > 1790) {
         if (i % 4 == 0) { teamPeopleCards[i].classList.add('show'); }
         else if (i % 4 == 1) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 150); }
         else if (i % 4 == 2) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 300); }
         else if (i % 4 == 3) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 450); }
     }
-    else if (main.offsetWidth <= 750) {
+    else if (main.offsetWidth <= 970) {
         teamPeopleCards[i].classList.add('show');
     }
-    else if (main.offsetWidth <= 1100) {
+    else if (main.offsetWidth <= 1380) {
         if (i % 2 == 0) { teamPeopleCards[i].classList.add('show'); }
         else if (i % 2 == 1) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 150); }
     }
-    else if (main.offsetWidth <= 1450) {
+    else if (main.offsetWidth <= 1790) {
         if (i % 3 == 0) { teamPeopleCards[i].classList.add('show'); }
         else if (i % 3 == 1) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 150); }
         else if (i % 3 == 2) { setTimeout(() => { teamPeopleCards[i].classList.add('show'); }, 300); }
