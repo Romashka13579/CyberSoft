@@ -1,26 +1,51 @@
 .company{
+    width: 100%;
+    height: 700px;
+    background: url(../img/company.jpeg) center/cover;
+}
+
+.company-gradient{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 700px;
-    background: rgb(212, 212, 212);
+    background: rgba(22, 33, 52, 0.7);
 }
 
 .company-txt{
-    font-size: 60px;
+    font-family: 'Poppins';
+    font-size: 50px;
     font-weight: 600;
-    margin: 0px 20px;
+    margin: 0px 100px;
+    color: white;
+    text-align: center;
 }
 
-/* .company-working-with{
-    
+.company-block-1{
+    display: flex;
+    padding: 80px 100px;
+    background: white;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.company-working-with-txt-1{
-    do
+.company-block-1-top{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    background: rgba(22, 33, 52, 1);
+    color: white;
+    padding: 15px 25px;
+    width: fit-content;
+    border-radius: 20px;
 }
 
-.company-working-with-txt-2{
-
-} */
+.company-block-1-description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+}
