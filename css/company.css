@@ -2,6 +2,7 @@
     width: 100%;
     height: 700px;
     background: url(../img/company.jpeg) center/cover;
+    margin-top: 90px;
 }
 
 .company-gradient{
@@ -26,6 +27,12 @@
     display: flex;
     padding: 80px 100px;
     background: white;
+    justify-content: center;
+}
+
+.company-block-inside{
+    display: flex;
+    max-width: 1920px;
     box-sizing: border-box;
     flex-direction: column;
     gap: 40px;
@@ -48,4 +55,58 @@
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
+}
+
+.company-slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-slider-overflow{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.company-slider-full{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transition: transform 2s;
+}
+
+.company-slider-block{
+    margin: auto;
+    width: 640px;
+    height: 400px;
+    background: url(../img/Rectangle\ 37.png) center/cover;
+    z-index: 1;
+}
+
+.company-slider-block-gradient{
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 33, 52, 0.45);
+}
+
+.active{
+    width: 800px;
+    height: 500px;
+    z-index: 2;
+    margin: auto -80px;
+}
+
+.active .company-slider-block-gradient{
+    opacity: 0;
 }
