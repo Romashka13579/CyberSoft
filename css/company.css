@@ -130,13 +130,14 @@
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 
 .company-slider-radiobtns input{display: none;}
 
 .company-slider-label{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: rgb(19, 47, 94);
     border-radius: 50%;
 }
@@ -144,30 +145,42 @@
 .company-slider-pacman{
     position: absolute;
     display: flex;
-    justify-content: end;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background: rgb(58, 111, 203);
     border-radius: 50%;
+    transition: transform 1s;
+    overflow: hidden;
 }
 
 .company-slider-pacman-triangle{
-    width: 12.5px;
-    height: 25px;
-    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    position: absolute;
+    right: -1px;
+    width: 18px;
+    height: 30px;
+    clip-path: polygon(100% 10%, 0 50%, 100% 90%);
     background: white;
-    animation: 4 pacman 0.5s;
+}
+
+.triangle-left{
+    right: auto;
+    left: -1px;
+    transform:matrix(-1.00,0.00,-0.00,-1.00,0,0);
+}
+
+.triangle-active{
+    animation: 2 pacman 0.5s;
 }
 
 @keyframes pacman {
     0%{
-        clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        clip-path: polygon(100% 10%, 0 50%, 100% 90%);
     }
     50%{
         clip-path: polygon(100% 50%, 0 50%, 100% 50%);
     }
     100%{
-        clip-path: polygon(100% 100%, 0 50%, 100% 0);
+        clip-path: polygon(100% 90%, 0 50%, 100% 0);
     }
 }

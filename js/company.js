@@ -2,6 +2,8 @@ var companySliderBlocks = document.querySelectorAll('.company-slider-block');
 var companySliderBtnLeft = document.querySelector('.company-slider-btn-left');
 var companySliderBtnRight = document.querySelector('.company-slider-btn-right');
 var companySliderFull = document.querySelector('.company-slider-full');
+var companySliderPacman = document.querySelector('.company-slider-pacman');
+var pacmanTriangle = companySliderPacman.querySelector('.company-slider-pacman-triangle');
 
 var sliderFirstClone = companySliderBlocks[0].cloneNode(true);
 var sliderSecondClone = companySliderBlocks[1].cloneNode(true);
@@ -21,6 +23,7 @@ var companySliderBlocks = document.querySelectorAll('.company-slider-block');
 var sliderBlockI = (companySliderBlocks.length - 1) / 2;
 companySliderBlocks[sliderBlockI].classList.add("active");
 var sliderBlockWidth = 560;
+var sliderBlockInputAndGap = 50;
 
 companySliderBtnLeft.addEventListener('click', () => {
     if (sliderBlockI == 1) { return; }
@@ -31,6 +34,11 @@ companySliderBtnLeft.addEventListener('click', () => {
     companySliderFull.style.transition = "transform 2s";
     companySliderFull.style.transform = "translateX(" + (((companySliderBlocks.length - 1) / 2 - sliderBlockI) * sliderBlockWidth) + "px)";
     companySliderBlocks[sliderBlockI].classList.toggle("active");
+
+    pacmanTriangle.classList.remove("triangle-active");
+    setTimeout(() => {pacmanTriangle.classList.add("triangle-active");}, 10);
+    companySliderPacman.style.transform = "translateX(" + (-((companySliderBlocks.length - 1) / 2 - sliderBlockI) * sliderBlockInputAndGap - 1) + "px)";
+    pacmanTriangle.classList.add("triangle-left");
 });
 
 companySliderBtnRight.addEventListener('click', () => {
@@ -42,7 +50,17 @@ companySliderBtnRight.addEventListener('click', () => {
     companySliderFull.style.transition = "transform 2s";
     companySliderFull.style.transform = "translateX(" + (((companySliderBlocks.length - 1) / 2 - sliderBlockI) * sliderBlockWidth) + "px)";
     companySliderBlocks[sliderBlockI].classList.toggle("active");
+
+    pacmanTriangle.classList.remove("triangle-active");
+    setTimeout(() => {pacmanTriangle.classList.add("triangle-active");}, 10);
+    companySliderPacman.style.transform = "translateX(" + (-((companySliderBlocks.length - 1) / 2 - sliderBlockI) * sliderBlockInputAndGap + 1) + "px)";
+    pacmanTriangle.classList.remove("triangle-left");
 });
+
+companySliderPacman.addEventListener('transitionend', () => {
+    pacmanTriangle.classList.remove("triangle-active");
+    console.log("a");
+})
 
 companySliderFull.addEventListener('transitionend', (e) => {
     if(e.propertyName == "transform"){
