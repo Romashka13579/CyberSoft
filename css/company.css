@@ -111,8 +111,14 @@
 
 .company-slider-btns{
     display: flex;
+    width: 100%;
+}
+
+.company-slider-btns-inside{
+    display: flex;
     align-items: center;
     gap: 200px;
+    margin: 0px auto;
 }
 
 .company-slider-btn-left,
@@ -218,4 +224,32 @@
     color: #FFFFFF;
     width: fit-content;
     text-decoration: none;
+}
+
+
+@media screen and (max-width:1120px) {
+    .company-slider-btns{
+        display: block;
+    }
+    .company-slider-btns-inside{
+        gap: 30px;
+        margin: 0px 100px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .company-slider-radiobtns{
+        display: none;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .company-slider-btns{
+        display: flex;
+    }
+    .company-slider-btns-inside{
+        gap: 50px;
+        margin: 0px auto;
+    }
 }
