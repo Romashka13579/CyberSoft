@@ -133,54 +133,25 @@
     align-items: center;
 }
 
-.company-slider-radiobtns input{display: none;}
+.company-slider-btns input{display: none;}
 
 .company-slider-label{
     width: 20px;
     height: 20px;
+    border: 3px solid rgb(19, 47, 94);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: background 200ms;
+}
+
+#company-slider-radiobtn-1:checked ~ .company-slider-radiobtns label:nth-child(1),
+#company-slider-radiobtn-2:checked ~ .company-slider-radiobtns label:nth-child(2),
+#company-slider-radiobtn-3:checked ~ .company-slider-radiobtns label:nth-child(3),
+#company-slider-radiobtn-4:checked ~ .company-slider-radiobtns label:nth-child(4),
+#company-slider-radiobtn-5:checked ~ .company-slider-radiobtns label:nth-child(5),
+#company-slider-radiobtn-6:checked ~ .company-slider-radiobtns label:nth-child(6),
+#company-slider-radiobtn-7:checked ~ .company-slider-radiobtns label:nth-child(7),
+#company-slider-radiobtn-8:checked ~ .company-slider-radiobtns label:nth-child(8),
+#company-slider-radiobtn-9:checked ~ .company-slider-radiobtns label:nth-child(9){
     background: rgb(19, 47, 94);
-    border-radius: 50%;
-}
-
-.company-slider-pacman{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background: rgb(58, 111, 203);
-    border-radius: 50%;
-    transition: transform 1s;
-    overflow: hidden;
-}
-
-.company-slider-pacman-triangle{
-    position: absolute;
-    right: -1px;
-    width: 18px;
-    height: 30px;
-    clip-path: polygon(100% 10%, 0 50%, 100% 90%);
-    background: white;
-}
-
-.triangle-left{
-    right: auto;
-    left: -1px;
-    transform:matrix(-1.00,0.00,-0.00,-1.00,0,0);
-}
-
-.triangle-active{
-    animation: 2 pacman 0.5s;
-}
-
-@keyframes pacman {
-    0%{
-        clip-path: polygon(100% 10%, 0 50%, 100% 90%);
-    }
-    50%{
-        clip-path: polygon(100% 50%, 0 50%, 100% 50%);
-    }
-    100%{
-        clip-path: polygon(100% 90%, 0 50%, 100% 0);
-    }
 }
