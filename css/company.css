@@ -48,6 +48,7 @@
     padding: 15px 25px;
     width: fit-content;
     border-radius: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(19, 47, 94, 0.24);
 }
 
 .company-block-1-description{
@@ -142,6 +143,7 @@
     border-radius: 50%;
     box-sizing: border-box;
     transition: background 200ms;
+    cursor: pointer;
 }
 
 #company-slider-radiobtn-1:checked ~ .company-slider-radiobtns label:nth-child(1),
@@ -154,4 +156,66 @@
 #company-slider-radiobtn-8:checked ~ .company-slider-radiobtns label:nth-child(8),
 #company-slider-radiobtn-9:checked ~ .company-slider-radiobtns label:nth-child(9){
     background: rgb(19, 47, 94);
+}
+
+.company-our-projects{
+    padding: 80px 100px;
+    background: #D5D7DE;
+}
+
+.company-our-projects-inside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1590px;
+    margin: 0px auto;
+}
+
+.company-our-projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.company-our-projects-card{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-our-projects-card-image{
+    width: 360px;
+    height: 270px;
+    background: #acadb3;
+}
+
+.company-our-projects-card-top{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(19, 47, 94);
+}
+
+.company-our-projects-card-description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #55555c;
+}
+
+.company-our-projects-card-btn{
+    padding: 10px 20px;
+    background: rgb(19, 47, 94);
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    color: #FFFFFF;
+    width: fit-content;
+    text-decoration: none;
 }
