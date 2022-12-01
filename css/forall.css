@@ -1,16 +1,44 @@
+:root{
+    --navbar-footer-bg:#21262D;
+    --color-1-default:white;
+    --color-2-default:black;
+    --color-3-default:#55555c;
+    --color-default-headers:white;
+    --color-default-headers-bg:rgb(19, 47, 94);
+    --text-hover-color:#2F97FF;
+    --body-parts-bg:#D5D7DE;
+    --body-parts-bg-2:white;
+    --language-theme-bg:#F1F1F1;
+    --language-theme-hover-bg:#c9cbd1;
+}
+
+.root-dark{
+    --navbar-footer-bg:#13121b;
+    --color-1-default:white;
+    --color-2-default:white;
+    --color-3-default:#a7a7b8;
+    --color-default-headers:white;
+    --color-default-headers-bg:#2f4eff;
+    --text-hover-color:#2f4eff;
+    --body-parts-bg:#1f1f22;
+    --body-parts-bg-2:#1c1c1f;
+    --language-theme-bg:#36363b;
+    --language-theme-hover-bg:#303035;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     height: fit-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #D5D7DE;
+    background: var(--body-parts-bg);
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     height: 90px;
-    background: #21262D;
+    background: var(--navbar-footer-bg);
     box-shadow: 0px 4px 10px rgba(8, 10, 46, 0.6);
     padding: 15px 40px;
     box-sizing: border-box;
@@ -27,7 +55,7 @@ body {
 .navbar-left-logo {
     width: 90px;
     height: 60px;
-    background: #EAEAEA;
+    background: #D5D7DE;
 }
 
 .navbar-center {
@@ -44,19 +72,19 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-1-default);
     text-decoration: none;
     transition: color 200ms;
 }
 
 .navbar-center-link:active {
-    color: #2F97FF;
+    color: var(--text-hover-color);
 }
 
 .navbar-rigth-contact-us {
     box-sizing: border-box;
     padding: 3px 15px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--color-1-default);
     border-radius: 15px;
     font-family: 'Poppins';
     font-style: normal;
@@ -64,15 +92,15 @@ body {
     font-size: 24px;
     line-height: 39px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-1-default);
     background: none;
     cursor: pointer;
     transition: color 300ms, border 300ms;
 }
 
 .navbar-rigth-contact-us:hover {
-    border: 1px solid #2F97FF;
-    color: #2F97FF;
+    border: 1px solid var(--text-hover-color);
+    color: var(--text-hover-color);
 }
 
 .navbar-rigth-burger-menu{
@@ -89,7 +117,7 @@ body {
 .navbar-rigth-burger-menu-icon-2,
 .navbar-rigth-burger-menu-icon-3{
     border-radius: 5px;
-    background: white;
+    background: var(--color-1-default);
     width: 40px;
     height: 6px;
     transition: transform 500ms, opacity 200ms;
@@ -101,7 +129,7 @@ body {
     position: fixed;
     width: 100%;
     height: 0vh;
-    background-color:#21262D;
+    background-color: var(--navbar-footer-bg);
     opacity: 0.95;
     z-index: 2;
     overflow: hidden;
@@ -124,108 +152,21 @@ body {
     font-weight: 500;
     font-size: 26px;
     text-align: right;
-    color: #FFFFFF;
+    color: var(--color-1-default);
     text-decoration: none;
     transition: color 200ms;
 }
 
 .navbar-telphone-contacts{
     width: fit-content;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--color-1-default);
     padding-bottom: 20px;
     box-sizing: border-box;
 }
 
 .navbar-telphone-link:active {
-    color: #2F97FF;
+    color: var(--text-hover-color);
 }
-
-
-
-
-/* .language-theme{
-    position: fixed;
-    padding-top: 90px;
-    right: 0px;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1px 1fr;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-.theme-grid{
-    display: grid;
-}
-
-.theme-inside{
-    height: fit-content;
-    margin-top: auto;
-}
-
-.language-theme-line{
-    height: 1px;
-    background: #c9cbd1;
-}
-
-.theme-block-option,
-.language-block-option,
-.theme-block-switched,
-.language-block-switched{
-    padding: 15px 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    background: #F1F1F1;
-    transition: background 200ms;
-}
-
-.theme-block-option,
-.theme-block-switched{border-top-left-radius: 5px;}
-.language-block-switched{border-bottom-left-radius: 5px;}
-
-.theme-block-option,
-.language-block-option{
-    display: none;
-    opacity: 0;
-    transition: opacity 200ms;
-}
-
-.theme-block-option:hover,
-.language-block-option:hover,
-.theme-inside:hover > .theme-block .theme-block-switched,
-.language-inside:hover > .language-block .language-block-switched{
-    background: #c9cbd1;
-}
-
-.theme-block-switched-color-2,
-.theme-block-switched-color{
-    width: 20px;
-    height: 20px;
-    background: black;
-    border-radius: 50%;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
-}
-
-.theme-block-switched-color-2{
-    background: white;
-    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.6));
-}
-
-.language-block-switched-flag{
-    width: 18px;
-    height: 14px;
-    background: url(../img/Ukraine.jpg) center/cover;
-}
-
-.theme-block-switched-txt,
-.language-block-switched-txt{
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 16px;
-} */
 
 .language-theme{
     position: fixed;
@@ -254,7 +195,7 @@ body {
 
 .language-theme-line{
     height: 1px;
-    background: #c9cbd1;
+    background: var(--language-theme-hover-bg);
 }
 
 .theme-block-option,
@@ -269,7 +210,7 @@ body {
     gap: 5px;
     align-items: center;
     justify-content: center;
-    background: #F1F1F1;
+    background: var(--language-theme-bg);
     transition: background 200ms;
 }
 
@@ -288,7 +229,7 @@ body {
 .language-block-option:hover,
 .theme-inside:hover > .theme-block .theme-block-switched,
 .language-inside:hover > .language-block .language-block-switched{
-    background: #c9cbd1;
+    background: var(--language-theme-hover-bg);
 }
 
 .theme-block-switched-color-2,
@@ -316,6 +257,7 @@ body {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
+    color: var(--color-2-default);
 }
 
 
@@ -323,13 +265,13 @@ body {
 
 .footer {
     width: 100%;
-    background: #21262D;
+    background: var(--navbar-footer-bg);
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--color-1-default);
     padding: 10px 0px;
 }
 
