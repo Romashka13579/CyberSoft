@@ -3,7 +3,7 @@
     --color-1-default:white;
     --color-2-default:black;
     --color-3-default:#55555c;
-    --color-default-headers:white;
+    --color-default-headers:#21262D;
     --color-default-headers-bg:rgb(19, 47, 94);
     --text-hover-color:#2F97FF;
     --body-parts-bg:#D5D7DE;
@@ -20,7 +20,7 @@
     --color-default-headers:white;
     --color-default-headers-bg:#2f4eff;
     --text-hover-color:#2f4eff;
-    --body-parts-bg:#1f1f22;
+    --body-parts-bg:#222225;
     --body-parts-bg-2:#1c1c1f;
     --language-theme-bg:#36363b;
     --language-theme-hover-bg:#303035;
@@ -272,7 +272,7 @@ body {
     align-items: center;
     text-align: center;
     color: var(--color-1-default);
-    padding: 10px 0px;
+    padding: 50px 0px;
 }
 
 .footer h2 {
