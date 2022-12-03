@@ -121,7 +121,7 @@
 .home-block-info-img{
     width: 484px;
     height: 489px;
-    background: url(../img/undraw_team_up_re_84ok\ 1.png);
+    background: url(../img/main.png);
 }
 
 .home-photo-what-we-do{
@@ -292,6 +292,7 @@
     background-repeat: no-repeat;
     background-size: 320px 320px;
     background-position-y: 50%;
+    filter: var(--background-picture-invert);
 }
 
 .home-web-pages-white{
@@ -306,7 +307,6 @@
     gap: 20px;
     margin: 0px 100px;
     box-sizing: border-box;
-    color: var(--color-2-default);
 }
 
 .home-web-pages-txt{

@@ -1,7 +1,7 @@
 .projects{
     display: flex;
     padding: 80px 100px;
-    background: white;
+    background: var(--body-parts-bg-2);
     justify-content: center;
     margin-top: 90px;
 }
@@ -19,8 +19,8 @@
     font-style: normal;
     font-weight: 600;
     font-size: 31px;
-    background: rgb(19, 47, 94);
-    color: white;
+    background: var(--color-default-headers-bg);
+    color: var(--color-1-default);
     padding: 15px 25px;
     width: fit-content;
     border-radius: 20px;
