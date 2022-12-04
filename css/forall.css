@@ -204,10 +204,20 @@ body {
     height: 50px;
 }
 
-.language-inside{
+.language{
+    position: relative;
     overflow: hidden;
     margin-bottom: auto;
     border-bottom-left-radius: 5px;
+}
+
+.language-options{
+    height: 0px;
+    transition: height 500ms;
+}
+
+.language:hover > .language-options{
+    height: 250px;
 }
 
 .language-theme-line{
@@ -216,7 +226,7 @@ body {
 }
 
 .theme-option,
-.language-block-option{
+.language-option{
     position: relative;
     width: 80px;
     height: 50px;
@@ -229,18 +239,12 @@ body {
     transition: background 200ms;
 }
 
-.language-block-options{
-    position: relative;
-    height: 0px;
-    transition: height 1000ms;
-}
-
 .language-inside:hover > .language-block-options{height: 250px;}
 
 .theme-option:hover,
 .theme:hover > .theme-chosen .theme-option,
-.language-block-option:hover,
-.language-inside:hover > .language-block .language-block-option{
+.language-option:hover,
+.language:hover > .language-chosen .language-option{
     background: var(--language-theme-hover-bg);
 }
 
@@ -257,14 +261,14 @@ body {
     filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.6));
 }
 
-.language-block-switched-flag{
+.language-flag{
     width: 18px;
     height: 14px;
     background: url(../img/Ukraine.jpg) center/cover;
 }
 
-.theme-block-switched-txt,
-.language-block-switched-txt{
+.theme-txt,
+.language-txt{
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;

@@ -17,32 +17,40 @@ navbarRigthBurgerMenu.addEventListener('click', () => {
 });
 
 var flagsArray = ["POL.webp", "ENG.svg", "DTH.svg", "FRN.webp", "SWD.webp"];
-var languageBlockSwitchedFlags = document.querySelectorAll('.language-block-switched-flag');
+var languageFlags = document.querySelectorAll('.language-flag');
 
 for (let j = 0; j < flagsArray.length; j++) {
-    languageBlockSwitchedFlags[j + 1].style.background = "url(img/" + flagsArray[j] + ") center/cover";
+    languageFlags[j + 1].style.background = "url(img/" + flagsArray[j] + ") center/cover";
 }
 
-var languageBlockOptions = document.querySelectorAll('.language-block-option');
-var languageBlockSwitched = document.querySelector('.language-block-switched');
+var languageOptions = document.querySelectorAll('.language-option');
+var languageOptions1 = document.querySelector('.language-options');
+var languageChosen = document.querySelector('.language-chosen');
 
-languageBlockOptions.forEach(languageBlockOption => {
-    languageBlockOption.addEventListener('click', () => {
-        var switchedTxt = languageBlockSwitched.querySelector('.language-block-switched-txt');
-        var switchedTxtClone = switchedTxt.cloneNode(true);
-        var optionTxt = languageBlockOption.querySelector('.language-block-switched-txt');
-        var optionTxtClone = optionTxt.cloneNode(true);
-        switchedTxt.parentNode.replaceChild(optionTxtClone, switchedTxt);
-        optionTxt.parentNode.replaceChild(switchedTxtClone, optionTxt);
+function LanguageStorage(language){
+    localStorage.setItem("language", language.id);
+}
 
-        var switchedFlag = languageBlockSwitched.querySelector('.language-block-switched-flag');
-        var switchedFlagClone = switchedFlag.cloneNode(true);
-        var optionFlag = languageBlockOption.querySelector('.language-block-switched-flag');
-        var optionFlagClone = optionFlag.cloneNode(true);
-        switchedFlag.parentNode.replaceChild(optionFlagClone, switchedFlag);
-        optionFlag.parentNode.replaceChild(switchedFlagClone, optionFlag);
+function LanguageStorageCheck(){
+    var storageLanguage = localStorage.getItem("language");
+    languageOptions1.querySelectorAll('.language-option').forEach(languageOption => {
+        if(storageLanguage === languageOption.id){
+            var languageChosenOption = languageChosen.querySelector('.language-option');
+            console.log(languageChosenOption);
+            languageChosen.append(languageOption);
+            languageOptions1.prepend(languageChosenOption);
+        }
+    });
+}
+
+languageOptions.forEach(languageOption => {
+    languageOption.addEventListener('click', () => {
+        LanguageStorage(languageOption);
+        LanguageStorageCheck();
     });
 });
+
+LanguageStorageCheck();
 
 var themeOptions = document.querySelectorAll('.theme-option');
 var themeOptions1 = document.querySelector('.theme-options');
