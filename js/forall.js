@@ -44,22 +44,29 @@ languageBlockOptions.forEach(languageBlockOption => {
     });
 });
 
-var themeBlockOption = document.querySelector('.theme-block-option');
-var themeBlockSwitched = document.querySelector('.theme-block-switched');
+var themeBlockOptions = document.querySelectorAll('.theme-block-option');
+var themeBlock = document.querySelector('.theme-block');
 
-themeBlockOption.addEventListener('click', () => {
-    document.documentElement.classList.toggle("root-dark");
-    var switchedTxt = themeBlockSwitched.querySelector('.theme-block-switched-txt');
-    var switchedTxtClone = switchedTxt.cloneNode(true);
-    var optionTxt = themeBlockOption.querySelector('.theme-block-switched-txt');
-    var optionTxtClone = optionTxt.cloneNode(true);
-    switchedTxt.parentNode.replaceChild(optionTxtClone, switchedTxt);
-    optionTxt.parentNode.replaceChild(switchedTxtClone, optionTxt);
+function ThemeStorage(theme){
+    localStorage.setItem("theme", theme.id);
+}
 
-    var switchedColor = themeBlockSwitched.querySelector('.theme-block-switched-color');
-    var switchedColorClone = switchedColor.cloneNode(true);
-    var optionColor = themeBlockOption.querySelector('.theme-block-switched-color');
-    var optionColorClone = optionColor.cloneNode(true);
-    switchedColor.parentNode.replaceChild(optionColorClone, switchedColor);
-    optionColor.parentNode.replaceChild(switchedColorClone, optionColor);
+function ThemeStorageCheck(){
+    var storageTheme = localStorage.getItem("theme");
+    themeBlockOptions.forEach(themeBlockOption => {
+        if(storageTheme === themeBlockOption.id){
+            themeBlock.append(themeBlockOption);
+        }
+    });
+    document.documentElement.className = storageTheme;
+}
+
+themeBlockOptions.forEach(themeBlockOption => {
+    themeBlockOption.addEventListener('click', () => {
+        ThemeStorage(themeBlockOption);
+        ThemeStorageCheck();
+        console.log("a");
+    });
 });
+
+ThemeStorageCheck();
