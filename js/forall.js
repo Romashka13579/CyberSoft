@@ -44,8 +44,9 @@ languageBlockOptions.forEach(languageBlockOption => {
     });
 });
 
-var themeBlockOptions = document.querySelectorAll('.theme-block-option');
-var themeBlock = document.querySelector('.theme-block');
+var themeOptions = document.querySelectorAll('.theme-option');
+var themeOptions1 = document.querySelector('.theme-options');
+var themeChosen = document.querySelector('.theme-chosen');
 
 function ThemeStorage(theme){
     localStorage.setItem("theme", theme.id);
@@ -53,19 +54,21 @@ function ThemeStorage(theme){
 
 function ThemeStorageCheck(){
     var storageTheme = localStorage.getItem("theme");
-    themeBlockOptions.forEach(themeBlockOption => {
-        if(storageTheme === themeBlockOption.id){
-            themeBlock.append(themeBlockOption);
+    themeOptions1.querySelectorAll('.theme-option').forEach(themeOption => {
+        if(storageTheme === themeOption.id){
+            var themeChosenOption = themeChosen.querySelector('.theme-option');
+            console.log(themeChosenOption);
+            themeChosen.append(themeOption);
+            themeOptions1.prepend(themeChosenOption);
         }
     });
     document.documentElement.className = storageTheme;
 }
 
-themeBlockOptions.forEach(themeBlockOption => {
-    themeBlockOption.addEventListener('click', () => {
-        ThemeStorage(themeBlockOption);
+themeOptions.forEach(themeOption => {
+    themeOption.addEventListener('click', () => {
+        ThemeStorage(themeOption);
         ThemeStorageCheck();
-        console.log("a");
     });
 });
 

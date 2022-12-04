@@ -183,20 +183,25 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1px 1fr;
+    flex-direction: column-reverse;
     z-index: 1;
     box-sizing: border-box;
 }
 
-.theme-block{
+.theme{
+    position: relative;
     overflow: hidden;
     margin-top: auto;
-    height: 50px;
     border-top-left-radius: 5px;
+}
+
+.theme-options{
+    height: 0px;
     transition: height 500ms;
 }
 
-.theme-block:hover{
-    height:100px
+.theme:hover > .theme-options{
+    height: 50px;
 }
 
 .language-inside{
@@ -210,7 +215,7 @@ body {
     background: var(--language-theme-hover-bg);
 }
 
-.theme-block-option,
+.theme-option,
 .language-block-option{
     position: relative;
     width: 80px;
@@ -224,25 +229,22 @@ body {
     transition: background 200ms;
 }
 
-.theme-block-options,
 .language-block-options{
     position: relative;
     height: 0px;
     transition: height 1000ms;
 }
-.theme-block-options{transition: height 200ms;}
 
 .language-inside:hover > .language-block-options{height: 250px;}
-.theme-block:hover > .theme-block-options{height: 50px;}
 
-.theme-block-option:hover,
+.theme-option:hover,
+.theme:hover > .theme-chosen .theme-option,
 .language-block-option:hover,
-.theme-block:hover > .theme-block .theme-block-option,
 .language-inside:hover > .language-block .language-block-option{
     background: var(--language-theme-hover-bg);
 }
 
-.theme-block-option-color{
+.theme-option-color{
     width: 20px;
     height: 20px;
     background: black;
