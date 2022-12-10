@@ -49,6 +49,7 @@
     width: fit-content;
     border-radius: 20px;
     box-shadow: 4px 4px 10px 2px rgba(19, 47, 94, 0.24);
+    text-align: center;
 }
 
 .company-block-1-description{
@@ -239,9 +240,27 @@
     }
 }
 
+@media screen and (max-width:980px) {
+    .company-block-inside{
+        align-items: center;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:820px) {
     .company-slider-radiobtns{
         display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .company-block-1{
+        padding: 80px 0px;
+    }
+    .company-txt,
+    .company-block-inside{
+        width: 250px;
+        margin: 0px auto;
     }
 }
 

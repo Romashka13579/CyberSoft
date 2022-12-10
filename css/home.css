@@ -26,6 +26,7 @@
     color: var(--color-1-default);
     transition: 300ms;
     animation: startText1 0.9s;
+    margin: 0px 100px;
 }
 
 .home-photo-txt-2{
@@ -467,7 +468,7 @@
 }
 
 @media screen and (max-width:450px) {
-    .home-web-pages-isnide-2, .home-web-pages-isnide, .home-wwd-blocks, .home-wwd-bottom-inside, .home-block-info{
+    .home-web-pages-isnide-2, .home-web-pages-isnide, .home-wwd-blocks, .home-wwd-bottom-inside, .home-block-info, .home-photo-txt-2, .home-photo-txt-1{
         width: 250px;
         margin: 0px auto;
     }
