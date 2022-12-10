@@ -71,6 +71,7 @@
     grid-template-columns: 1fr 484px;
     margin: 0px auto;
     max-width: fit-content;
+    gap: 60px;
 }
 
 .home-block-info-txt{
@@ -99,7 +100,6 @@
     font-weight: 400;
     font-size: 22px;
     color: var(--color-2-default);
-    margin-right: 60px;
     max-width: 830px;
 }
 
@@ -121,7 +121,7 @@
 .home-block-info-img{
     width: 484px;
     height: 489px;
-    background: url(../img/main.png);
+    background: url(../img/main.png) center/cover;
 }
 
 .home-photo-what-we-do{
@@ -369,6 +369,16 @@
     .home-wwd-block-top{
         width: min-content;
     }
+    .home-block-info {
+        grid-template-columns: 1fr;
+    }
+    .home-block-info-img{
+        margin: 0px auto;
+    }
+    .home-block-info-txt{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:1090px) {
@@ -413,6 +423,13 @@
     }
 }
 
+@media screen and (max-width:684px) {
+    .home-block-info-img{
+        width: calc(100vw - 200px);
+        height: calc(100vw - 200px);
+    }
+}
+
 @media screen and (max-width:680px) {
     .home-wwd-blocks{
         display: flex;
@@ -444,12 +461,18 @@
         grid-template-rows: auto min-content;
         gap: 40px;
     }
+    .home-block-info-img{
+        display: none;
+    }
 }
 
 @media screen and (max-width:450px) {
-    .home-web-pages-isnide-2, .home-web-pages-isnide, .home-wwd-blocks, .home-wwd-bottom-inside{
+    .home-web-pages-isnide-2, .home-web-pages-isnide, .home-wwd-blocks, .home-wwd-bottom-inside, .home-block-info{
         width: 250px;
         margin: 0px auto;
+    }
+    .home-info{
+        padding: 80px 0px;
     }
 }
 

@@ -213,7 +213,7 @@ body {
 
 .language-options{
     height: 0px;
-    transition: height 500ms;
+    transition: height 1s;
 }
 
 .language:hover > .language-options{
