@@ -14,6 +14,18 @@
     --language-theme-bg:#F1F1F1;
     --language-theme-hover-bg:#c9cbd1;
     --background-picture-invert: invert(0%);
+    --text-size-std-50:50px;
+    --text-size-std-42:42px;
+    --text-size-std-40:40px;
+    --text-size-std-38:38px;
+    --text-size-std-30:30px;
+    --text-size-std-28:28px;
+    --text-size-std-26:26px;
+    --text-size-std-24:24px;
+    --text-size-std-22:22px;
+    --text-size-std-20:20px;
+    --text-size-std-18:18px;
+    --text-size-std-16:16px;
 }
 
 .dark,
@@ -76,7 +88,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--text-size-std-24);
     display: flex;
     align-items: center;
     text-align: center;
@@ -97,7 +109,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--text-size-std-24);
     line-height: 39px;
     text-align: center;
     color: var(--color-1-default);
@@ -158,7 +170,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: var(--text-size-std-26);
     text-align: right;
     color: var(--color-1-default);
     text-decoration: none;
@@ -271,7 +283,7 @@ body {
 .language-txt{
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--text-size-std-16);
     color: var(--color-2-default);
 }
 

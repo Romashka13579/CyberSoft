@@ -21,7 +21,7 @@
     text-align: center;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 38px;
+    font-size: var(--text-size-std-38);
     max-width: 700px;
     color: var(--color-1-default);
     transition: 300ms;
@@ -31,7 +31,7 @@
 
 .home-photo-txt-2{
     font-weight: 300;
-    font-size: 20px;
+    font-size: var(--text-size-std-20);
     max-width: 500px;
     animation: startText2 1s;
 }
@@ -90,7 +90,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--text-size-std-28);
     color: var(--color-1-default);
     width: fit-content;
 }
@@ -99,7 +99,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: var(--text-size-std-22);
     color: var(--color-2-default);
     max-width: 830px;
 }
@@ -112,7 +112,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: var(--text-size-std-30);
     color: #FFFFFF;
     width: fit-content;
     outline: none;
@@ -145,7 +145,7 @@
     text-align: center;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 42px;
+    font-size: var(--text-size-std-42);
     margin: 80px 90px 0px 90px;
     color: var(--color-1-default);
 }
@@ -179,7 +179,7 @@
 .home-wwd-block-top{
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 38px;
+    font-size: var(--text-size-std-38);
     padding: 20px 30px;
     color: var(--color-default-headers);
     width: fit-content;
@@ -204,13 +204,13 @@
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--text-size-std-20);
     color: var(--color-default-headers);
     transition: color 300ms;
 }
 
 .home-wwd-block-item-icon{
-    font-size: 40px;
+    font-size: var(--text-size-std-40);
     transition: color 300ms;
     color: var(--color-default-headers);
 }
@@ -234,7 +234,7 @@
 .home-web-bottom-description{
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
     text-align: center;
     max-width: 370px;
     color: var(--color-2-default);
@@ -244,7 +244,7 @@
     padding: 20px 30px;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 22px;
+    font-size: var(--text-size-std-22);
     text-align: center;
     background: var(--body-parts-bg-2);
     border: 2px solid var(--language-theme-hover-bg);
@@ -266,7 +266,7 @@
 }
 
 .home-web-pages-link{
-    font-size: 30px;
+    font-size: var(--text-size-std-30);
 }
 
 .wp-git{
@@ -313,7 +313,7 @@
 .home-web-pages-txt{
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 50px;
+    font-size: var(--text-size-std-50);
     transform: translateX(-200px);
     opacity: 0;
     transition: opacity 600ms, transform 600ms;
@@ -327,7 +327,7 @@
 .home-web-pages-description{
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
     margin-right: 150px;
     max-width: 1200px;
     transform: translateX(-200px);
@@ -351,19 +351,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width:1160px) {
-    .home-wwd-blocks{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2px 1fr 2px 1fr 2px 1fr;
-    }
-    .home-wwd-block{
-        flex-direction: row;
-        gap: 20px;
-    }
-    .home-wwd-items{
-        flex-direction: row;
-        gap: 20px;
-    }
+@media screen and (max-width:1200px){
     .home-wwd-block-item{
         flex-direction: column;
     }
@@ -379,6 +367,24 @@
     .home-block-info-txt{
         text-align: center;
         align-items: center;
+    }
+    :root{
+        --text-size-std-30:28px;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .home-wwd-blocks{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2px 1fr 2px 1fr 2px 1fr;
+    }
+    .home-wwd-block{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .home-wwd-items{
+        flex-direction: row;
+        gap: 20px;
     }
 }
 
