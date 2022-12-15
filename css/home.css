@@ -500,3 +500,40 @@
         margin: 0px auto;
     }
 }
+
+@media screen and (max-width:900px) {
+    :root{
+        --text-size-std-38: 34px;
+        --text-size-std-20: 18px;
+        --text-size-std-22: 18px;
+        --text-size-std-28: 24px;
+        --text-size-std-30: 24px;
+        --text-size-std-42: 38px;
+        --text-size-std-50: 45px;
+        --text-size-std-18: 16px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    :root{
+        --text-size-std-38: 28px;
+        --text-size-std-20: 14px;
+        --text-size-std-22: 15px;
+        --text-size-std-28: 21px;
+        --text-size-std-30: 21px;
+        --text-size-std-50: 40px;
+        --text-size-std-18: 14px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    :root{
+        --text-size-std-38: 24px;
+        --text-size-std-20: 12px;
+        --text-size-std-22: 13px;
+        --text-size-std-28: 18px;
+        --text-size-std-30: 18px;
+        --text-size-std-50: 35px;
+        --text-size-std-18: 13px;
+    }
+}
