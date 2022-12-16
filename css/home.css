@@ -1,7 +1,6 @@
 .home-photo{
     margin-top: 90px;
     width: 100%;
-    height: 600px;
     background: url(../img/header-bg.jpg) center/cover;
 }
 
@@ -12,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 600px;
+    padding: 150px 0px;
     background: rgba(22, 33, 52, 0.7);
 }
 
@@ -127,8 +126,8 @@
 
 .home-photo-what-we-do{
     width: 100%;
-    height: 400px;
     background: url(../img/technologies.jpg) center/cover;
+    margin-bottom: -100px;
 }
 
 .home-photo-gradient-what-we-do{
@@ -137,7 +136,7 @@
     gap: 20px;
     align-items: center;
     width: 100%;
-    height: 400px;
+    padding-bottom: 150px;
     background: rgba(22, 33, 52, 0.8);
 }
 
@@ -150,9 +149,9 @@
     color: var(--color-1-default);
 }
 
-.home-wwd{
+/* .home-wwd{
     margin: -200px auto 0px auto;
-}
+} */
 
 .home-wwd-blocks{
     display: grid;
@@ -402,9 +401,6 @@
     .home-photo-wwd-txt{
         margin: 80px 100px 0px 100px;
     }
-    .home-wwd{
-        margin-top: -135px;
-    }
 }
 
 @media screen and (max-width:780px) {
@@ -450,9 +446,6 @@
     }
     .home-photo-wwd-txt{
         max-width: 455px;
-    }
-    .home-wwd{
-        margin-top: -70px;
     }
 }
 
@@ -523,6 +516,7 @@
         --text-size-std-30: 21px;
         --text-size-std-50: 40px;
         --text-size-std-18: 14px;
+        --text-size-std-42: 34px;
     }
 }
 
@@ -535,5 +529,6 @@
         --text-size-std-30: 18px;
         --text-size-std-50: 35px;
         --text-size-std-18: 13px;
+        --text-size-std-42: 30px;
     }
 }
