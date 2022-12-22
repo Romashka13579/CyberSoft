@@ -29,6 +29,8 @@
     --text-size-std-16:16px;
     --text-size-std-14:14px;
     --text-size-std-12:12px;
+    --icon-pp: 80px;
+    --icon-team-card-links: 25px;
 }
 
 .dark,
@@ -361,6 +363,7 @@ body {
     :root{
         --text-size-std-50: 45px;
         --text-size-std-42: 38px;
+        --text-size-std-40: 36px;
         --text-size-std-38: 34px;
         --text-size-std-32: 29px;
         --text-size-std-30: 27px;
@@ -374,6 +377,9 @@ body {
         --text-size-std-18: 16px;
         --text-size-std-16: 15px;
         --text-size-std-14: 13px;
+
+        --icon-pp: 70px;
+        --icon-team-card-links: 23px;
     }
 }
 
@@ -381,6 +387,7 @@ body {
     :root{
         --text-size-std-50: 40px;
         --text-size-std-42: 34px;
+        --text-size-std-40: 32px;
         --text-size-std-38: 30px;
         --text-size-std-32: 26px;
         --text-size-std-30: 24px;
@@ -395,6 +402,9 @@ body {
         --text-size-std-16: 14px;
         --text-size-std-14: 12px;
         --text-size-std-12: 11px;
+
+        --icon-pp: 60px;
+        --icon-team-card-links: 21px;
     }
 }
 
@@ -402,6 +412,7 @@ body {
     :root{
         --text-size-std-50: 35px;
         --text-size-std-42: 30px;
+        --text-size-std-40: 30px;
         --text-size-std-38: 26px;
         --text-size-std-32: 23px;
         --text-size-std-30: 21px;
@@ -416,5 +427,8 @@ body {
         --text-size-std-16: 13px;
         --text-size-std-14: 12px;
         --text-size-std-12: 10px;
+
+        --icon-pp: 50px;
+        --icon-team-card-links: 18px;
     }
 }

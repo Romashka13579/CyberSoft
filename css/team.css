@@ -202,8 +202,8 @@
 }
 
 .team-people-card-link {
-    width: 25px;
-    height: 25px;
+    width: var(--icon-team-card-links);
+    height: var(--icon-team-card-links);
     border-radius: 50%;
 }
 

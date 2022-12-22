@@ -423,8 +423,8 @@
 }
 
 .order-types-main-link{
-    width: 80px;
-    height: 80px;
+    width: var(--icon-pp);
+    height: var(--icon-pp);
     background: url(../img/powerpoint.png) center/cover;
     opacity: 1;
 }
