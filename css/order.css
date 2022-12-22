@@ -33,7 +33,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 49px;
+    font-size: var(--text-size-std-50);
     text-align: center;
     color: var(--color-2-default);
 }
@@ -60,7 +60,7 @@
 }
 
 .actual-slider-top-arrow{
-    font-size: 25px;
+    font-size: var(--text-size-std-24);
     margin: auto;
 }
 
@@ -72,7 +72,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: var(--text-size-std-24);
     text-align: center;
     color: var(--color-2-default);
     background: none;
@@ -142,6 +142,7 @@
 }
 
 .actual-slider-description-txt{
+    font-size: var(--text-size-std-16);
     color: var(--color-3-default);
 }
 
@@ -158,7 +159,7 @@
 }
 
 .actual-slider-txt{
-    font-size: 22px;
+    font-size: var(--text-size-std-22);
     font-weight: 600;
     text-align: center;
 }
@@ -173,7 +174,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: var(--text-size-std-22);
     text-align: left;
 }
 
@@ -181,11 +182,12 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: var(--text-size-std-12);
     color: var(--color-3-default);
 }
 
 .actual-slider-more{
+    font-size: var(--text-size-std-16);
     width: min-content;
     font-weight: 600;
     text-align: center;
@@ -232,7 +234,7 @@
     display: flex;
     gap: 10px;
     color: var(--color-1-default);
-    font-size: 14px;
+    font-size: var(--text-size-std-14);
     align-items: center;
 }
 
@@ -243,7 +245,7 @@
     position: relative;
     display: flex;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
@@ -260,7 +262,7 @@
 
 .orderbar-block-type-2::placeholder,
 .orderbar-block-type::placeholder{
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
     font-weight: 600;
     color: white;
 }
@@ -284,7 +286,7 @@
 
 .orderbar-dropdown-menu-item-2,
 .orderbar-dropdown-menu-item{
-    font-size: 16px;
+    font-size: var(--text-size-std-16);
     padding: 5px 10px;
     transition: color 200ms;
     transition: background 300ms;
@@ -298,7 +300,7 @@
 
 .orderbar-btn{
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
     font-weight: 600;
     background: rgba(152, 151, 223, 0.3);
     border: 2px solid white;
@@ -346,7 +348,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 49px;
+    font-size: var(--text-size-std-50);
     text-align: center;
 }
 
@@ -358,7 +360,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: var(--text-size-std-24);
     text-align: center;
     background: none;
     cursor: pointer;
@@ -408,7 +410,7 @@
 }
 
 .order-types-main-txt{
-    font-size: 28px;
+    font-size: var(--text-size-std-28);
     font-weight: 600;
     text-align: center;
     width: max-content;
@@ -433,7 +435,7 @@
     background: var(--navbar-footer-bg);
     backdrop-filter: blur(10px);
     color: white;
-    font-size: 16px;
+    font-size: var(--text-size-std-16);
     transform: translateX(-100vw);
     transition: transform 0.5s;
 }

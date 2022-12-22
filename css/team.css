@@ -18,7 +18,7 @@
 
 .our-team-txt-1{
     font-family: 'Montserrat';
-    font-size: 32px;
+    font-size: var(--text-size-std-32);
     font-weight: 600;
     margin: 0px 20px 0px 0px;
     color: white;
@@ -30,7 +30,7 @@
 
 .our-team-txt-2{
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: var(--text-size-std-16);
     font-weight: 600;
     margin: 0px 20px 0px 0px;
     color: white;
@@ -85,7 +85,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 49px;
+    font-size: var(--text-size-std-50);
     margin: 0px 100px;
     padding: 0px 50px;
     color: var(--color-2-default);
@@ -159,13 +159,13 @@
 .team-people-card-name{
     font-family: 'Inter';
     font-weight: 900;
-    font-size: 20px;
+    font-size: var(--text-size-std-20);
 }
 
 .team-people-card-proffesion{
     font-family: 'Inter';
     font-weight: 300;
-    font-size: 14px;
+    font-size: var(--text-size-std-14);
 }
 
 .team-people-card-right{
@@ -185,13 +185,13 @@
 .team-people-card-right-top{
     font-family: 'Montserrat';
     font-weight: 900;
-    font-size: 18px;
+    font-size: var(--text-size-std-18);
 }
 
 .team-people-card-right-txt{
     font-family: 'Montserrat';
     font-weight: 900;
-    font-size: 12px;
+    font-size: var(--text-size-std-12);
 }
 
 .team-people-card-links {
@@ -275,7 +275,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: var(--text-size-std-30);
     color: #FFFFFF;
 }
 
