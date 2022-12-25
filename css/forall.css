@@ -31,6 +31,7 @@
     --text-size-std-12:12px;
     --icon-pp: 80px;
     --icon-team-card-links: 25px;
+    --icon-projects-card-1-links: 240px;
     --icon-projects-card-2-links: 300px;
 }
 
@@ -438,5 +439,11 @@ body {
         --icon-pp: 50px;
         --icon-team-card-links: 18px;
         --icon-projects-card-2-links: 200px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    :root{
+        --icon-projects-card-1-links: 180px;
     }
 }

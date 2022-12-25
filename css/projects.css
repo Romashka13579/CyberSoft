@@ -46,8 +46,8 @@
 }
 
 .projects-card-image{
-    width: 320px;
-    height: 240px;
+    width:  320px;;
+    height: var(--icon-projects-card-1-links);
     background: var(--language-theme-hover-bg);
 }
 
@@ -180,7 +180,19 @@
     }
 }
 
+@media screen and (max-width:520px) {
+    .projects-card-image,
+    .projects-card{
+        width: auto;
+    }
+    .projects-top{
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:450px) {
+    .projects-card-image,
+    .projects-card,
     .projects-best-inside,
     .projects-best-blocks,
     .projects-best-block:nth-child(2n),
