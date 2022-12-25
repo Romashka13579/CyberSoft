@@ -31,6 +31,7 @@
     --text-size-std-12:12px;
     --icon-pp: 80px;
     --icon-team-card-links: 25px;
+    --icon-projects-card-2-links: 300px;
 }
 
 .dark,
@@ -408,6 +409,12 @@ body {
     }
 }
 
+@media screen and (max-width:680px) {
+    :root{
+        --icon-projects-card-2-links: 240px;
+    }
+}
+
 @media screen and (max-width:560px) {
     :root{
         --text-size-std-50: 35px;
@@ -430,5 +437,6 @@ body {
 
         --icon-pp: 50px;
         --icon-team-card-links: 18px;
+        --icon-projects-card-2-links: 200px;
     }
 }
