@@ -171,7 +171,7 @@
         text-align: center;
     }
     .projects-best-block:nth-child(2n) .projects-best-block-image{grid-column: 1;grid-row: 1;}
-    .projects-best-block:nth-child(2n) .projects-best-block-text{grid-column: 1;grid-row: 2;}
+    .projects-best-block:nth-child(2n) .projects-best-block-text{grid-column: 1;grid-row: 2;text-align: center;}
     .projects-best-inside{
         padding: 80px 100px;
     }
