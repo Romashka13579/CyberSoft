@@ -32,7 +32,7 @@
 .actual-slider-top-txt{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-50);
     text-align: center;
     color: var(--color-2-default);
@@ -71,7 +71,7 @@
     border-radius: 15px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-24);
     text-align: center;
     color: var(--color-2-default);
@@ -173,7 +173,7 @@
     color: var(--color-4-default);
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-22);
     text-align: left;
 }
@@ -181,7 +181,7 @@
 .actual-slider-cost-2{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-12);
     color: var(--color-3-default);
 }
@@ -347,7 +347,7 @@
 .order-types-top-txt{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-50);
     text-align: center;
 }
@@ -359,7 +359,7 @@
     border-radius: 15px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--text-size-std-24);
     text-align: center;
     background: none;

@@ -17,7 +17,7 @@
 .company-txt{
     font-family: 'Poppins';
     font-size: var(--text-size-std-50);
-    font-weight: 600;
+    font-weight: 500;
     margin: 0px 100px;
     color: var(--color-1-default);
     text-align: center;
@@ -55,7 +55,7 @@
 .company-block-1-description{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: var(--text-size-std-24);
     color: var(--color-2-default);
 }
@@ -202,7 +202,7 @@
 .company-our-projects-card-top{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: var(--text-size-std-28);
     color: var(--color-default-headers-bg);
 }
@@ -211,7 +211,7 @@
     width: fit-content;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: var(--text-size-std-16);
     color: var(--color-3-default);
 }
