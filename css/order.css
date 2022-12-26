@@ -572,9 +572,9 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:450px) {
     .order-types-block{
-        width: 300px;
+        width: 250px;
         margin: 0px auto;
     }
 }

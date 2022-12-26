@@ -334,6 +334,26 @@
     }
 }
 
+@media screen and (max-width:560px) {
+    .team-people-card{
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 300px;
+    }
+    .active {
+        max-width: 300px;
+        max-height: 800px;
+    }
+    .team-people-card-photo{
+        width: 260px;
+        height: 260px;
+    }
+    .team-people-card-block{
+        width: 180px;
+        margin-bottom: -10px;
+    }
+}
+
 @media screen and (max-width:500px) {
     .our-team-txt-1,
     .our-team-txt-2{
